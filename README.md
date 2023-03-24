@@ -1,42 +1,29 @@
-# Nuxt 3 Minimal Starter
+# How to use
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+docker imageの作成
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+```
+$docker build -t nuxt-docker .
 ```
 
-## Development Server
+imageが作成されているかの確認
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+```
+$docker images
 ```
 
-## Production
+docker run
 
-Build the application for production:
-
-```bash
-npm run build
+```
+$docker run -d -p 3000:3000 nuxt-docker
 ```
 
-Locally preview production build:
+コンテナが起動しているかの確認
 
-```bash
-npm run preview
+```
+$docker ps
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+localhost:3000 にアクセスする
+
+
