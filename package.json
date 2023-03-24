@@ -3,12 +3,11 @@
   "scripts": {
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "dev": "HOST=0.0.0.0 PORT=3000 nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "HOST=0.0.0.0 PORT=3000 nuxt start"
+    "start": "nuxt start"
   },
-  "devDependencies": {
+  "dependencies": {
     "nuxt": "^3.3.1"
   }
 }
