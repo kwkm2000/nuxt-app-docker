@@ -1,5 +1,7 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <p>
+      NuxtをECRで動かしたい
+    </p>
   </div>
 </template>
